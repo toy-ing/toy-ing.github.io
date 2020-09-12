@@ -1,0 +1,60 @@
+@import url('./init.css');
+@import url('./font.css');
+@import url('./variables.css');
+
+html, body {
+  margin: 0;
+  height: 100%;
+}
+
+main {
+  box-sizing: border-box;
+
+  padding-top: 6em;
+  padding: 3em;
+
+  height: 100%;
+
+  word-break: keep-all;
+
+  background-color: var(--color-gray-white);
+  color: var(--color-gray-black);
+}
+
+main > article {
+  position: relative;
+}
+
+main > article > h1 {
+  font-size: 96px;
+}
+
+main > article > h3 {
+  margin-top: 0.15em;
+  font-size: 32px;
+}
+
+main > article > p {
+  margin-top: 2em;
+}
+
+main > article.background-text {
+  position: fixed;
+  bottom: -11em;
+  right: -15vw;
+}
+
+main > article.background-text > h1 {
+  font-size: 466px;
+  color: #ccc;
+}
+
+@media screen and (max-width: 660px) {
+  main > article.background-text {
+    bottom: -7em;
+  }
+
+  main > article.background-text > h1 {
+    font-size: 332px;
+  }
+}
